@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        #toDo {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        #toDoTextDiv {
+            margin-top: 5px;
+            border: 1px solid black;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #toDoMessage {
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./todo.html">To Do List</a>
+    </nav>
+
+    <hr>
+
+    <h1>To Do List</h1>
+    <hr>
+
+    <div id="toDo">
+        <input type="number" id="toDoId">
+        <button type="button" id="toDoBtn">Submit</button>
+    </div>
+
+    <div id="toDoTextDiv">
+        <span id="toDoMessage"></span>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>

@@ -9,5 +9,6 @@ toDoBtnEl.addEventListener('click', () => {
     fetch(`http://jsonplaceholder.typicode.com/todos/${toDoId.value}`).then(response => response.json()).then(data => {
             toDoMessageDiv.innerHTML = `<h5>${data.title}</h5><hr> <p style="display: flex; justify-content: center;">status: ${data.completed}</p>`
         })
+    
 })
 
